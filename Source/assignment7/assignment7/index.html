@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Game ୨ৎ</title>
+    <link rel="stylesheet" href="game.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Square Game.</h1>
+    <label for="numSquares">Number of Squares:</label>
+    <input type="number" id="numSquares" min="1" placeholder="Enter number of squares">
+    <label for="color">Color:</label>
+    <input type="color" id="color" value="#ff0000">
+    <button id="startButton">Start</button>
+    
+    <div id="countdown">Time left: 30s</div>
+    <div id="game-area"></div>
+    <div id="message"></div>
+
+	<div id="win-overlay">
+        <div class="win-message">You Win!</div>
+        <button id="playAgainButton">Play Again</button>
+    </div>
+
+	<div id="lose-overlay">
+        <div class="lose-message">You Lose!</div>
+        <button id="playAgainButtonLose">Play Again</button>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
