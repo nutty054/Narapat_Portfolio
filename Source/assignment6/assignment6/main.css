@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #7f88bf;
+    font-family: "Playpen Sans", cursive;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 60px auto;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form::before {
+    content: '';
+    display: block;
+    background-image: url('register_logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80px;
+    height: 150px;
+    margin: -30px auto 20px auto;
+}
+
+fieldset {
+    border: none;
+}
+
+
+legend {
+    font-size: 24px;
+    color: #7f88bf;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+form span, form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: 45%;
+    padding: 10px;
+    border: none;
+    background-color: #7f88bf;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #7f88bf;
+}
+
+input[type="submit"] {
+    margin-right: 4%;
+}
+
+#errormsg {
+    color: red;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #7f88bf;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+    form {
+        padding: 20px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+
+    input[type="submit"] {
+        margin-right: 0;
+    }
+}

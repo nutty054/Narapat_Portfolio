@@ -1,0 +1,352 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Itim" , cursive;
+    font-weight: 400;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f17dbf;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.logo a {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px; 
+    height: auto;
+    margin-right: 10px;
+}
+
+
+
+.menu-icon {
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 7px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        background-color: #f17dbf;
+        padding: 16px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex; 
+    }
+}
+
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 32px;
+    padding: 24px;
+    background:#6543a1;
+    color: white;
+}
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-right: 24px;
+    border: 2px solid white;
+}
+
+
+header h1 {
+    font-size: 32px;
+}
+
+header p {
+    margin: 3.2px 0;
+}
+/* Hobbies & Interests Styles */
+section {
+    font-size: 17px;
+    padding: 32px;
+    margin: 16px 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 16px;
+    color: #232323;
+}
+
+/* Skills Section */
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 16px;
+}
+
+.skill-item {
+    background-color: #e9ecef;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.skill-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+}
+
+/* References Section */
+section#references {
+    padding: 32px;
+    text-align: center;
+    background-color: white;
+}
+
+section#references ul {
+    list-style: none;
+}
+
+ul {
+    list-style-type: disc; /* bullet ● */
+    margin-left: 20px;     /* ระยะขอบซ้าย */
+}
+
+section#references li {
+    margin: 8px 0;
+}
+
+section#references a {
+    color: #2c2b2c;
+    text-decoration: none;
+}
+
+/* Projects Section */
+#projects {
+    padding: 32px;
+    margin: 16px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#projects h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 32px;
+    color: #232323;
+}
+
+#projects h3 {
+    font-size: 28.8px;
+    margin-top: 32px;
+    color: #6543a1;
+}
+
+.project-item {
+    margin-bottom: 24px;
+    font-size: 19.2px;
+}
+
+.project-item a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/* Button Styles */
+.button{
+    display: inline-block;
+    padding: 12.8px 24px;
+    background-color: #6543a1;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #b5abd0;
+    transform: translateY(-3px);
+}
+
+.button:active {
+    transform: translateY(1px);
+}
+
+
+/* Drawing Grid */
+.drawing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.drawing-item {
+    position: relative;
+    padding-top: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.drawing-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.drawing-item:hover {
+    transform: scale(1.05);
+}
+
+/* Assignment Buttons - Horizontal Layout */
+.assignment-buttons-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center; 
+    gap: 5px; 
+    margin-top: 32px;
+}
+
+@media (max-width: 600px) {
+    .assignment-buttons-horizontal {
+        flex-direction: column; /* เรียงปุ่มแนวตั้ง */
+        gap: 10px;
+        margin-top: 20px;
+    }
+}
+
+#assignments {
+    margin-top: 60px;
+}
+
+.button-horizontal {
+    padding: 16px 2px;
+    background-color: #6543a1;
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+    border-radius: 70px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s;
+    width: 200px;
+    position: relative;
+}
+
+/* Animation on Hover */
+.button-horizontal:hover {
+    background-color: #d8d6de;
+    transform: translateY(-3px);
+}
+
+/* Animation on Click */
+.button-horizontal:active {
+    transform: translateY(2px) scale(0.98);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #6543a1;
+    color: white;
+    text-align: center;
+    padding: 32px;
+}
+
+footer h2 {
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li img.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+footer ul li {
+    margin-bottom: 16px;
+}
+
+footer ul li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    footer {
+        font-size: 14.4px;
+    }
+}

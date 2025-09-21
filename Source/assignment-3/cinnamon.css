@@ -1,0 +1,84 @@
+body{
+    font-family: Garamond, 'Times New Roman', Times, serif;
+    background-color: rgb(255, 207, 167);
+}
+h1{
+    background-color: beige;
+    color: brown;
+    font-family: Garamond, 'Times New Roman', Times, serif;
+    font-size: 40pt;
+    font-style: italic;
+    font-weight: bold;
+    margin: auto;
+    width: 300px;
+    text-decoration: underline;
+    text-shadow: 50px;
+}
+div{
+    text-align: center;
+}
+#Ingredients_pic{
+    width: 25%;
+    border: 5px dotted rgb(228, 77, 31);
+}
+#cinnamon_png{
+    width: 50%;
+    float: middle;
+    vertical-align: middle;
+}
+#instructions{
+    width: 20%;
+    border: 5px dotted rgb(228, 77, 31);
+}
+#ingre{
+    background-color: beige;
+    display: flex;
+}
+
+#howto{
+    background-color: beige;
+    display: flex;
+}
+#more{
+    text-align: center;
+}
+h2,h3{
+    text-decoration: underline;
+}
+h2,h3{
+    background-color: beige;
+    color: brown;
+    font-family: Garamond, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    margin: auto;
+    width: 300px;
+    text-align: center;
+}
+h4{
+    font-family: Garamond, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin: auto;
+    width: 200px;
+
+}
+#left{
+    text-align: left;
+    justify-content: left;
+}
+.parent{
+    display: flex;
+    text-align: middle;
+    justify-content: center;
+}
+
+.frn{
+    border: 2px solid rgb(128, 36, 36);
+    width: 10%;
+}
+div a{
+    font-size: 15px;
+    font-weight: bold;
+    color: brown;
+}
